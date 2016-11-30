@@ -1,0 +1,86 @@
+@import "templatecolours.css";
+
+
+header
+{
+    background-color: white;
+
+}
+
+body {
+    max-width:960px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    font-family: 'Raleway', sans-serif;
+}
+
+nav>ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav>ul>li {
+    float:left;
+}
+
+nav>ul>li a {
+    display: block;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px 30px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #C9A4CB;
+}
+
+#logo
+{
+    max-width: 300px;
+}
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-style: inherit;
+}
+nav {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    background-color: #791d7e;
+}
+
+input[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    text-align: left;
+    background-color: white;
+    padding: 12px 20px 12px 10px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+input[type=text]:focus {
+    width: 100%;
+}
+
+#socialMedia {
+    float: right;
+    display: inline-block;
+}
+
+footer{
+    background-color: rgba(121, 29, 126, 0.5);
+    padding-bottom:5px;
+    text-align: center;
+    font-size: medium;
+}
