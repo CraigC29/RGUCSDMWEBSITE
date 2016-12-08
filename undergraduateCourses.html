@@ -3,12 +3,24 @@
 <head>
     <link rel="stylesheet" href="assets/css/masterStyle.css" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/unsemantic-grid-responsive-tablet.css" type="text/css">
+
     <meta charset="UTF-8">
     <title>Undergraduate Courses</title>
 </head>
 
 <body>
 
+<!-- FACEBOOK CODE START -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.8";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<!-- FACEBOOK CODE END -->
 
 <!-- HEADER START -->
 <header>
@@ -30,9 +42,8 @@
             <li><a href="newsAndArticles.html"> News And Articles </a></li>
             <li><a href="courses.html"> About </a></li>
             <li><a href="undergraduateCourses.html"> Courses </a></li>
-            <li><a href="#"> Timetables </a></li>
-            <li><a href="#"> Research </a></li>
             <li><a href="contactUs.html"> Contact Us </a></li>
+            <li><a href="socialMedia.html" class="socialLink grid-7">Media</a></li>
         </ul>
     </nav>
     <!-- SECTIONS BAR END -->
@@ -41,42 +52,72 @@
         <input type="text" name="search" placeholder="Search...">
     </form>
 
+    <img src="assets/img/courses/computingBanner.jpg" alt="logo" id="banner">
+
     <!-- UNDERGRADUATE SECTION START -->
-    <section class="undergraduates">
+    <div class="undergraduates grid-70">
 
         <h2> Undergraduate Courses</h2>
 
         <article>
-            <img src="assets/img/undergraduateCourses/cs.jpeg" alt="Computer Sciences">
-            <h3>Computer Sciences</h3>
+
+            <h3>Computer Science</h3>
+            <p>
+                Our degree in Computer Science allows students to learn both skills and knowledge of software systems enabling them to be able to design and implement the software to a very high and professional standard which is expected by the vastly growing industry.
+                Students will learn various skills such as system development and object-orientated software design and how to apply them. It will allow you to learn how to work effectively on a wide range of computing platforms and also form the basis for a career as a professional software developer.
+                The course includes a one year-long, paid industrial placement option in its third year. If you choose to do it, you will gain invaluable industrial experience which will help you focus on your career goals. Companies such as BT and IBM take students for placements as well as smaller, more local software houses. Oversea placements are also offered with companies in France, USA, Canada and Japan.
+                In earning this degree, your work will be highly appreciated by employers and kick-start your career as a professional software developer, with the skills to work with a wide range of modern computing platforms.
+            </p>
         </article>
 
         <article>
-            <img src="assets/img/undergraduateCourses/dm.jpeg" alt="Digital Media">
+
             <h3>Digital Media</h3>
+            <p>
+                Our digital media degree combines creative design skills with a high level of technical ability. It ensures that employers are gaining the most highly skilled graduates that will take their companies to the next level. This course teaches students practical skills and knowledge to start with a client brief to then take your design concepts to practical implementation.
+                Design, human computer interaction, web and multimedia are the four main themes of design presented throughout this degree and they are underpinned by technical and professional skills. These themes provide students with the ability to work in 2D and 3D environments and work with the latest mobile technologies.
+                The course has a strong emphasis on providing real life experience by introducing client based projects from year 2 onwards. Students will critically evaluate their work and collect all their creative work to form a portfolio, which will become a tangible on-going record of the student’s achievements and improve their chance of employment.
+                The final year of this course gives students the opportunity to create a self-directed individual project on a specialised area of digital media design, as well as allowing them to develop strong skills in advanced aspects of the course.
+            </p>
         </article>
 
         <article>
-            <img src="assets/img/undergraduateCourses/ca.jpeg" alt="Computing and Animation">
-            <h3>Computing and Animation</h3>
+
+            <h3>Graphics and Animation</h3>
+            <p>
+                Our Graphics and Animation degree combines creative design skills with a high level of technical ability. It ensures that employers are gaining the most highly skilled graduates that will take their companies to the next level. This course teaches students practical skills and knowledge to start with a client brief to then take your design concepts to practical implementation.
+                Design, human computer interaction, web and multimedia are the four main themes of design presented throughout this degree and they are underpinned by technical and professional skills. These themes provide students with the ability to work in 2D and 3D environments and work with the latest mobile technologies.
+                The course has a strong emphasis on providing real life experience by introducing client based projects from year 2 onwards. Students will critically evaluate their work and collect all their creative work to form a portfolio, which will become a tangible on-going record of the student’s achievements and improve their chance of employment.
+                The final year of this course gives students the opportunity to create a self-directed individual project on a specialised area of digital media design, as well as allowing them to develop strong skills in advanced aspects of the course.
+            </p>
         </article>
 
-        <article>
-            <img src="assets/img/undergraduateCourses/csec.jpeg" alt="Cyber Security">
-            <h3>Cyber Security</h3>
-        </article>
-    </section>
+    </div>
     <!-- UNDERGRADUATE SECTION END -->
 
+    <div class="grid-30">
+
+        <h2 class="linkHead">Useful Links</h2>
+
+        <ul class="links">
+            <li><a href="http://www.rgu.ac.uk/computing/study-options/undergraduate/computer-science-bsc-hons">Computer Science</a></li>
+            <li><a href="http://www.rgu.ac.uk/computing/study-options/undergraduate-full-time/digital-media-design-production-and-development-bsc-hons">Digital Media</a></li>
+            <li><a href="http://www.rgu.ac.uk/computing/study-options/undergraduate/computer-science-bsc-hons">Graphics and Animation</a></li>
+
+        </ul>
+
+    </div>
 
 </main>
 <!-- MAIN END -->
 
 <!-- FOOTER START -->
-<footer>
-    <hr>
+<footer class="grid-100">
     <p> School of Computer Science and Digital Media</p>
     <P> Robert Gordon University, Sir Ian Wood Building, Garthdee Road, Aberdeen. AB10 7GJ</P>
+    <a href="https://twitter.com/rgucomputing" class="twitter-follow-button" data-show-count="false">Follow @rgucomputing</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <br>
+    <div class="fb-like" data-href="https://www.facebook.com/RobertGordonUniComputing/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
 </footer>
 <!-- FOOTER END -->
 

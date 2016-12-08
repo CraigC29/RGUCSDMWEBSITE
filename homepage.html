@@ -3,10 +3,13 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="assets/css/masterStyle.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/unsemantic-grid-responsive-tablet.css" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+
     <meta charset="UTF-8">
     <title>Homepage</title>
-
 </head>
 
 <body>
@@ -42,9 +45,8 @@
             <li><a href="newsAndArticles.html"> News And Articles </a></li>
             <li><a href="courses.html"> About </a></li>
             <li><a href="undergraduateCourses.html"> Courses </a></li>
-            <li><a href="#"> Timetables </a></li>
-            <li><a href="#"> Research </a></li>
             <li><a href="contactUs.html"> Contact Us </a></li>
+            <li><a href="socialMedia.html" class="socialLink grid-7">Media</a></li>
         </ul>
     </nav>
     <!-- SECTIONS BAR END -->
@@ -53,18 +55,81 @@
         <input type="text" name="search" placeholder="Search...">
     </form>
 
+    <!Banner Starts -->
+
+    <div class="w3-content w3-section" style="max-width:960px">
+        <img class="mySlides w3-animate-left" src="assets/img/homepage/banner.png" style="width:100%" alt="Sir Ian Wood Building">
+        <img class="mySlides w3-animate-left bannerImage" src="assets/img/homepage/inside.jpg" style="width:100%" alt="Sir Ian Wood Building Inside">
+        <img class="mySlides w3-animate-left bannerImage" src="assets/img/homepage/outside.jpg" style="width:100%" alt="Sir Ian Wood Building Outside">
+    </div>
+
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}
+            x[myIndex-1].style.display = "block";
+            setTimeout(carousel, 5000);
+        }
+    </script>
+
+    <!Banner Ends -->
+
+
+
+<div class="grid-container">
+    <br>
+    <br>
+    <div class="grid-75">
+        Computing is high impact, with a global reach that shapes every aspect of today’s society.
+        We take a dynamic and innovative approach to teaching the technologies needed to address 21st century challenges. Computing is always on the move, offering a direct, creative and inspiring route into stimulating and rewarding careers
+        30% of Scotland's software engineers live and work in Aberdeen.
+        <ul>
+            <li>Make valuable connections with potential employers through stimulating placement opportunities.</li>
+            <li>Commercial collaboration at local, national and international level ensures our teaching and project work stays up-to-date.</li>
+            <li>Take a first foundation year to gain a broad base of practical computing skills.</li>
+            <li>Balance theory and practice so that learning is always useful and relevant.</li>
+            <li>Make valuable connections with potential employers through stimulating placement opportunities.</li>
+            <li>Commercial collaboration at local, national and international level ensures our teaching and project work stays up-to-date.</li>
+            <li>Take a first foundation year to gain a broad base of practical computing skills.</li>
+            <li>Balance theory and practice so that learning is always useful and relevant.</li>
+        </ul>
+    </div>
+
+    <div  id="firstArticle" class="grid-25">
+        <img src="assets/img/newsAndArticles/Article1.jpg" alt="Filler" class="smallArticleImage">
+        <h3><a href="articleOne.html" class="articleLink">Article One</a></h3>
+        <p>
+            This is an article
+        <ul>
+            <li>Something about article</li>
+            <li>Something about article</li>
+        </ul>
+        </p>
+        <hr>
+        9th November 2016
+        <br>
+        <br>
+    </div>
+
+</div>
 </main>
 <!-- MAIN END -->
-<div id="socialMedia">
-    <a class="twitter-timeline" data-width="220" data-height="440" href="https://twitter.com/RGUComputing">Tweets by RGUComputing</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-</div>
-<div class="fb-like" data-href="https://www.facebook.com/RobertGordonUniComputing/" data-width="200" data-layout="button" data-action="like" data-show-faces="true" data-share="true"></div>
 
 <!-- FOOTER START -->
-<footer>
-    <hr>
+<footer class="grid-100">
     <p> School of Computer Science and Digital Media</p>
     <P> Robert Gordon University, Sir Ian Wood Building, Garthdee Road, Aberdeen. AB10 7GJ</P>
+    <a href="https://twitter.com/rgucomputing" class="twitter-follow-button" data-show-count="false">Follow @rgucomputing</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <br>
+    <div class="fb-like" data-href="https://www.facebook.com/RobertGordonUniComputing/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
 </footer>
 <!-- FOOTER END -->
 

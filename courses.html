@@ -3,12 +3,23 @@
 <head>
     <link rel="stylesheet" href="assets/css/masterStyle.css" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/unsemantic-grid-responsive-tablet.css" type="text/css">
     <meta charset="UTF-8">
     <title>Courses</title>
 </head>
 
 <body>
 
+<!-- FACEBOOK CODE START -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.8";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<!-- FACEBOOK CODE END -->
 
 <!-- HEADER START -->
 <header>
@@ -30,9 +41,8 @@
             <li><a href="newsAndArticles.html"> News And Articles </a></li>
             <li><a href="courses.html"> About </a></li>
             <li><a href="undergraduateCourses.html"> Courses </a></li>
-            <li><a href="#"> Timetables </a></li>
-            <li><a href="#"> Research </a></li>
             <li><a href="contactUs.html"> Contact Us </a></li>
+            <li><a href="socialMedia.html" class="socialLink grid-7">Media</a></li>
         </ul>
     </nav>
     <!-- SECTIONS BAR END -->
@@ -42,63 +52,80 @@
     </form>
 
     <!-- SECTION COURSES START-->
-    <section class="courses">
+    <div class="courses grid-70">
 
-        <h2> Courses </h2>
+        <h2> Course Types </h2>
 
         <article>
-            <img src="assets/img/courses/undergraduate.jpeg" alt="Undergraduate courses" class="courses">
             <h3>Undergraduate</h3>
+            <p>If you are interested in studying computing at undergraduate level, there are a number of courses available to you. Our courses are designed to respond to the needs of industry so when you graduate you will have the skills you need to build a successful career.</p>
         </article>
 
         <article>
-            <img src="assets/img/courses/postgraduate.jpeg" alt="postgraduate courses" class="courses">
             <h3>Postgraduate</h3>
+            <p>A postgraduate degree is an excellent way to build on your existing knowledge and skills and take the next step in your career. Alternatively, you might be interested in a change of career and a postgraduate degree can help you to do that.</p>
         </article>
 
         <article>
-            <img src="assets/img/courses/partTime.jpeg" alt="Part Time courses" class="courses">
             <h3>Part Time</h3>
+            <p>If you are unable to commit to full-time study, a part-time course is an ideal way to improve your career prospects and learn new skills.</p>
         </article>
 
         <article>
-            <img src="assets/img/courses/shortCourses.jpeg" alt="Short courses" class="courses">
             <h3>Short Courses</h3>
+            <p>We offer a range of career enhancing short computing courses to contribute to your CPD plan, helping to bridge gaps in your knowledge or updating your skills in the latest technologies. These short IT courses are all delivered by our expert tutors within the School of Computing Science and Digital Media in Aberdeen.</p>
         </article>
 
         <article>
-            <img src="assets/img/courses/distanceLearning.jpeg" alt="Distance Learning" class="courses">
             <h3>Distance Learning</h3>
+            <p>Currently we do not offer distance learning Computing Science and Digital Media courses.
+                Check out our current offering of on-campus part-time and short courses to fit in with your busy lifestyle.</p>
         </article>
 
         <article>
-            <img src="assets/img/courses/research.jpeg" alt="Research" class="courses">
             <h3>Research</h3>
+            <p>Any funded research studentships offered by the University are advertised here.
+                Studentships are offered only for projects identified by individual Schools and if successful you will be expected to follow their direction.</p>
         </article>
 
-    </section>
+    </div>
     <!-- SECTION COURSES END -->
 
+    <div class="grid-25">
+
+        <h2 class="linkHead">Useful Links</h2>
+
+        <ul class="links">
+            <li><a href="http://www.rgu.ac.uk/areas-of-study/subjects/computing/study-options/undergraduate">Undergraduate</a></li>
+            <li><a href="http://www.rgu.ac.uk/areas-of-study/subjects/computing/study-options/postgraduate">Postgraduate</a></li>
+            <li><a href="http://www.rgu.ac.uk/areas-of-study/subjects/computing/study-options/part-time-learning">Part Time</a></li>
+            <li><a href="http://www.rgu.ac.uk/computingshortcourses">Short Courses</a></li>
+            <li><a href="http://www.rgu.ac.uk/areas-of-study/subjects/computing/study-options/distance-learning">Distance Learning</a></li>
+            <li><a href="http://www.rgu.ac.uk/research/graduate-school/applying-for-a-research-degree/funded-studentship-opportunities">Research</a></li>
+        </ul>
+
+    </div>
+
+
     <!-- YOUTUBE VIDEO START -->
-    <section class="video">
+    <section class="video grid-100">
+        <h2>About the Campus</h2>
         <iframe width="640" height="360" src="https://www.youtube.com/embed/Ps11CDkNS44?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
     </section>
     <!-- YOUTUBE VIDEO END -->
 
-    <!-- MAP START -->
-    <section class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2166.0905207161954!2d-2.1432107840159933!3d57.11841608094051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x488410483d2f0941%3A0x5d8969688e77366a!2sRobert+Gordon+University+Aberdeen%2C+Garthdee+Campus!5e0!3m2!1sen!2suk!4v1480329980377" width="640" height="360" frameborder="0" style="border:0" allowfullscreen></iframe>
-    </section>
-    <!-- MAP END -->
+
 
 </main>
 <!-- MAIN END -->
 
 <!-- FOOTER START -->
-<footer>
-    <hr>
+<footer class="grid-100">
     <p> School of Computer Science and Digital Media</p>
     <P> Robert Gordon University, Sir Ian Wood Building, Garthdee Road, Aberdeen. AB10 7GJ</P>
+    <a href="https://twitter.com/rgucomputing" class="twitter-follow-button" data-show-count="false">Follow @rgucomputing</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <br>
+    <div class="fb-like" data-href="https://www.facebook.com/RobertGordonUniComputing/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
 </footer>
 <!-- FOOTER END -->
 
