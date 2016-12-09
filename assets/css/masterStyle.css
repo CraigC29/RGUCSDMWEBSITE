@@ -51,6 +51,12 @@ h1 {
     font-style: inherit;
 }
 
+h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: lighter;
+    font-style: normal;
+}
+
 
 
 nav {
@@ -170,8 +176,7 @@ footer{
 }
 
 #mainHead {
-    min-height: 350px;
-    min-width: 300px;
+
 }
 
 #firstArticle {
