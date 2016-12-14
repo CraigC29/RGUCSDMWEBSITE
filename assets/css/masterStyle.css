@@ -1,5 +1,6 @@
 @import "templatecolours.css";
 
+/*Set General CSS*/
 
 header
 {
@@ -58,7 +59,7 @@ h2 {
 }
 
 
-
+/*Navigation Bar*/
 nav {
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
@@ -95,6 +96,8 @@ div>input[type=text]{
     margin-bottom: 10px;
 }
 
+
+/*Search Bar*/
 input[type=text]:focus {
     width: 100%;
 }
@@ -103,6 +106,8 @@ div>input[type=text]:focus {
     width: 200%;
 }
 
+
+/*Button CSS*/
 button {
     position: relative;
     background-color: #ccc;
@@ -139,11 +144,14 @@ button:active:after {
     transition: 0s
 }
 
+/*Social Media*/
 #socialMedia {
     background-color: gold;
     max-width: 200px;
 }
 
+
+/*Footer CSS*/
 footer{
     background-color: #C9A4CB;
     padding-bottom:5px;
@@ -152,6 +160,7 @@ footer{
     line-height: 0.5;
 }
 
+/*Image CSS*/
 #banner {
     max-width: 100%;
     height: auto;
@@ -175,25 +184,6 @@ footer{
     padding-bottom: 40px;
 }
 
-#mainHead {
-
-}
-
-#firstArticle {
-   /* background-color: silver; */
-}
-
-#secondArticle {
-    /* background-color: saddlebrown; */
-}
-
-#thirdArticle {
-    /* background-color: blue; */
-}
-
-#fourthArticle {
-    /* background-color: green; */
-}
 
 
 .headImage {
@@ -241,7 +231,7 @@ max-width: 160px;
     max-width: 300px;
 }
 
-
+/*Articles and links*/
 #sideArticles {
     float: right;
 }
